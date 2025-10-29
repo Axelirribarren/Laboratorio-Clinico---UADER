@@ -1,0 +1,219 @@
+/*///////esta implementado en mobile first///////*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #bcbec0;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #34495E;
+}
+
+.informe-pagina {
+    width: 100%;
+    margin: 0;
+    background-color: #E1EFF0;
+    display: flex;
+    flex-direction: column;
+}
+
+.informe-header-fijo {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-bottom: 2px solid #005A9C;
+}
+
+
+.logo-img {
+    width: 200px; 
+    height: 200px;
+    
+    object-fit: contain; 
+    
+    margin: 0 auto 15px auto;
+    flex-shrink: 0;
+}
+
+.info-laboratorio {
+    text-align: center;
+}
+.info-laboratorio h1 {
+    margin: 0 0 10px 0;
+    font-size: 1.4em;
+    color: #005A9C;
+}
+.info-laboratorio p {
+    margin: 4px 0;
+    font-size: 0.9em;
+}
+.contact-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.informe-header-variable {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 15px;
+    border-bottom: 1px solid #005A9C;
+    background-color: #f7fbfc;
+}
+.info-item {
+    font-size: 0.9em;
+}
+.info-item strong {
+    display: block;
+    color: #333;
+}
+.info-item span {
+
+    color: #34495E;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+
+.informe-detalle {
+    padding: 15px;
+}
+.informe-detalle h3 {
+    margin-top: 0;
+    color: #005A9C;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.practica-item {
+    border: 1px solid #5D9CEC;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.practica-item div {
+    padding: 10px;
+}
+
+.practica-header {
+    background-color: #f0f5f6;
+    border-bottom: 1px solid #5D9CEC;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    font-weight: bold;
+}
+.practica-comentario {
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.practica-valores {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.valor-paciente span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.valor-destacado {
+    color: #005A9C;
+    font-weight: bold;
+}
+
+.practica-observaciones {
+    background-color: #fdfdfd;
+    font-size: 0.9em;
+}
+
+
+.informe-footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #005A9C;
+    font-size: 0.8em;
+    color: #34495E;
+    opacity: 0.9;
+}
+.footer-fecha {
+    margin-top: 5px;
+}
+
+
+/*///////media para desktop///////*/
+@media (min-width: 768px) {
+    
+    body { font-size: 16px; }
+
+    .informe-pagina {
+        max-width: 800px;
+        margin: 20px auto;
+        border: 1px solid #b0b0b0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .informe-header-fijo {
+        flex-direction: row;
+        padding: 20px;
+    }
+    .logo-img { margin: 0; }
+    .info-laboratorio { text-align: left; margin-left: 20px; width: 100%; }
+    .info-laboratorio h1 { font-size: 1.8em; }
+    .contact-grid { grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
+
+    .informe-header-variable {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px 20px;
+        padding: 20px;
+    }
+    .info-item strong {
+        display: inline-block;
+        width: 170px;
+        color: #00447a;
+        font-weight: bold;
+    }
+    .info-item span {
+        font-size: 1em;
+        font-weight: normal;
+    }
+
+    .informe-detalle { padding: 20px; }
+    .practica-item div { padding: 12px 15px; }
+    .practica-header { grid-template-columns: 2fr 1fr 2fr; }
+    .practica-valores { grid-template-columns: 1fr 1fr; }
+
+    .informe-footer {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        padding: 15px 20px;
+    }
+    .footer-fecha { margin-top: 0; }
+}
+
+/*///////BTN PDF///////*/
+.zona-descarga {
+    max-width: 800px;
+    margin: 15px auto 0 auto;
+    padding: 0 10px;
+}
+#btnDescargarPDF {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #005A9C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#btnDescargarPDF:hover {
+    background-color: #00447a;
+}

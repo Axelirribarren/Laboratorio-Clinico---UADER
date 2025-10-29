@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe de Laboratorio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    
+
+    <div class="informe-pagina">
+
+        <header class="informe-header-fijo">
+    
+        <img src="/img/UADER LABORATORIO CLINICO.svg" alt="LOGO UADER LABORATORIO CLINICO" class="logo-img">
+
+            <div class="info-laboratorio">
+                <h1>UADER - Laboratorio Clínico</h1>
+                <div class="contact-grid">
+                    <div class="contact-col-1">
+                        <p><strong>Domicilio:</strong> Ruta Provincial Nº 11. Km 10,5, Oro Verde, Entre Ríos</p>
+                        <p><strong>Teléfono:</strong> (0343) 4975066</p>
+                        <p><strong>Email:</strong> labclinico@uader.com.ar</p>
+                    </div>
+                    <div class="contact-col-2">
+                        <p><strong>App:</strong>(0343) 4975141</p>
+                        <p><strong>Sitio web:</strong> www.labclinicouader.com.ar</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="informe-header-variable">
+            <div class="info-item">
+                <strong>N° de Informe:</strong>
+                <span>12345-2025</span>
+            </div>
+            <div class="info-item">
+                <strong>Fecha de Recepción:</strong>
+                <span>28/10/2025</span>
+            </div>
+            <div class="info-item">
+                <strong>Paciente:</strong>
+                <span>Axel Irribarren (24 años)</span>
+            </div>
+            <div class="info-item">
+                <strong>Profesional Solicitante:</strong>
+                <span>Dr. Zufiaurre Juan (MP: 4442)</span>
+            </div>
+             <div class="info-item">
+                <strong>Profesional Laboratorio:</strong>
+                <span>Dr. Gaitán Nicolás (MP: 4567)</span>
+            </div>
+            <div class="info-item">
+                <strong>Procedencia:</strong>
+                <span>Hospital San Martín</span>
+            </div>
+        </section>
+
+        <main class="informe-detalle">
+            <h3>Prácticas Realizadas</h3>
+            
+            <div class="practica-item">
+                <div class="practica-header">
+                    <div class="ph-muestra"><strong>Muestra remitida:</strong> Suero</div>
+                    <div class="ph-codigo"><strong>Código:</strong> 501</div>
+                    <div class="ph-desc"><strong>Descripción:</strong> Glucemia</div>
+                </div>
+                <div class="practica-comentario">
+                    <strong>Comentario:</strong> Paciente refiere ayuno de 12 hs.
+                </div>
+                <div class="practica-valores">
+                    <div class="valor-paciente">
+                        <strong>Valores paciente:</strong>
+                        <span>98 mg/dL</span>
+                    </div>
+                    <div class="valor-referencia">
+                        <strong>Valores de referencia:</strong>
+                        <span>70 - 110 mg/dL</span>
+                    </div>
+                </div>
+                <div class="practica-observaciones">
+                    <strong>Observaciones:</strong> Valor dentro de los rangos esperados.
+                </div>
+            </div>
+
+            <div class="practica-item">
+                <div class="practica-header">
+                    <div class="ph-muestra"><strong>Muestra remitida:</strong> Suero</div>
+                    <div class="ph-codigo"><strong>Código:</strong> 602</div>
+                    <div class="ph-desc"><strong>Descripción:</strong> Colesterol Total</div>
+                </div>
+                <div class="practica-comentario">
+                    <strong>Comentario:</strong> -
+                </div>
+                <div class="practica-valores">
+                    <div class="valor-paciente">
+                        <strong>Valores paciente:</strong>
+                        <span class="valor-destacado">215 mg/dL</span>
+                    </div>
+                    <div class="valor-referencia">
+                        <strong>Valores de referencia:</strong>
+                        <span>Deseable: < 200 mg/dL</span>
+                    </div>
+                </div>
+                <div class="practica-observaciones">
+                    <strong>Observaciones:</strong> Valor en el límite alto. Se sugiere control.
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="informe-footer">
+            <div class="footer-usuario">
+                <strong>Usuario:</strong> Montórfano Juan Francisco (Admin) - Pág 1 de 1
+            </div>
+        </footer>
+
+    </div> 
+
+    <div class="zona-descarga">
+        <button id="btnDescargarPDF">Descargar Informe en PDF</button>
+    </div>
+    </div> <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    
+    <script src="app.js"></script>
+</body>
+</html>
