@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
             margin:       0.2, 
             filename:     'Informe-Laboratorio-12345.pdf', 
             image:        { type: 'jpeg', quality: 0.98 }, 
-            html2canvas:  { scale: 2, useCORS: true }, // Escala para mejor resolución
-            jsPDF:        { unit: 'in', format: 'a4', orientation: 'landscape' } // Formato A4
+            html2canvas:  { scale: 2}, 
+            jsPDF:        { unit: 'in', format: 'a4', orientation: 'landscape' }
         };
 
         // Libreria para crear el pdf
